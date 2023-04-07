@@ -1,0 +1,130 @@
+body{
+margin:0;
+padding:0;
+overflow-x:hidden;
+background-color: black;
+}
+
+.pointer { 
+  cursor: pointer; 
+}
+
+.line{
+height:0.5vh;
+width:120%;
+animation: line 10s ease-in-out infinite;
+box-shadow: 0 0 100px 15px;
+}
+
+#line1{
+  transform: rotate(24deg);
+  transform-origin: -5%;
+}
+
+#line2{
+  margin-top: 40%;
+  transform: rotate(-27deg);
+  transform-origin: 0%;
+}
+
+
+
+#connect_metamask{
+  position: absolute;
+  margin: -38% 0% 0% 85%; 
+  border: none;
+  border-radius: 20px;
+  background-color:#5FFFF4;
+  padding: 0.5%;
+}
+
+#network{
+  position: absolute;
+  margin: -37.6% 0% 0% 79%; 
+  border: 1px solid #5FFFF4;
+  border-radius: 20px;
+  width: 5%;
+  height: 3vh;
+  color:#5FFFF4;
+}
+
+#nft_placeholder{
+  position: absolute;
+  background-color: rgb(168, 167, 167);
+  margin: -34% 0% 0% 15%;
+  height: 70vh;
+  width:30%;
+}
+
+h1{
+  position: absolute;
+  margin: -24% 0% 0% 60%;
+  color:#5FFFF4;
+  font-family: arial;
+  font-size: 50px;
+}
+
+#p_div{
+  position: absolute;
+  margin: -18% 0% 0% 60%;
+  width: 35%;
+}
+
+p{
+  color:#5FFFF4;
+  font-family: arial;
+  font-size: 18px;
+  line-height:1.4;
+}
+
+#launch_app{
+  position: absolute;
+  margin:-1% 0% 0% 60%;
+  border: none;
+  border-radius: 10px;
+  background-color:#5FFFF4;
+  width:15%;
+  font-size: 18px;
+  padding: 1%;
+}
+
+#line3{
+  height:0.1vh;
+  margin: 6% 0% 0% 0%;
+  box-shadow: none;
+}
+
+#group{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+
+.nft{
+  margin-top: 5%;
+  height: 25vh;
+  width:10%;
+  background-color: rgb(175, 175, 175);
+}
+
+@keyframes line{
+  0% {
+    background-color: #be004f;
+    color:#be004f;
+  }
+
+  25%{
+    background-color: purple;
+    color:purple;
+  }
+
+  50%{
+    background-color: blue;
+    color:blue;
+  }
+  
+  100%{
+    background-color: #be004f;
+    color:#be004f;
+  }
+}
