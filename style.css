@@ -12,7 +12,7 @@ background-color: black;
 .line{
 height:0.5vh;
 width:120%;
-animation: line 10s ease-in-out infinite;
+animation: rainbowBackground 10s ease-in-out infinite;
 box-shadow: 0 0 100px 15px;
 }
 
@@ -50,12 +50,24 @@ box-shadow: 0 0 100px 15px;
   font-family: Arial;
 }
 
-#nft_placeholder{
+#main_img{
   position: absolute;
   background-color: rgb(168, 167, 167);
   margin: -34% 0% 0% 15%;
   height: 70vh;
   width:30%;
+}
+
+#social_{
+  position:absolute;
+  width:15%;
+  margin-left:25%;
+  margin-top:5%;
+}
+
+#twitter_,#github_,#discord_{
+  margin-right: 5%;
+  color:#5FFFF4
 }
 
 h1{
@@ -90,43 +102,227 @@ p{
   padding: 1%;
 }
 
-#line3{
-  height:0.1vh;
-  margin: 6% 0% 0% 0%;
-  box-shadow: none;
+
+
+
+
+#nft_navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:10vh;
+  background-color: black;
 }
 
-#group{
+#connect_metamask_{
+  position: absolute;
+  margin: 1% 0% 0% 85%; 
+  border: none;
+  border-radius: 20px;
+  animation: rainbowBackground 10s ease-in-out infinite;
+  color:white;
+  padding: 0.5%;
+}
+
+#network_{
+  position: absolute;
+  margin: 1.3% 0% 0% 79%; 
+  border: 1px solid #5FFFF4;
+  border-radius: 20px;
+  width: 5%;
+  height: 3vh;
+  text-align: center;
+  color:#5FFFF4;
+  font-family: Arial;
+}
+
+#social{
+width: 30%;
+margin-left:5%;
+margin-top:1%;
+}
+
+#twitter,#github,#discord,#document{
+  margin-right: 2%;
+  color:#5FFFF4;
+}
+
+#document{
+  margin-left:3%; 
+}
+
+#filter{
+position:relative;
+display:flex;
+flex-direction: column;
+font-family: arial;
+height: 90vh;
+width:28%;
+margin: 0% 0% 0% 0%;
+background-color: black;
+}
+
+h3{
+  font-size: 30px;
+  text-align: center;
+  color:#5FFFF4;
+}
+
+.collapsible{
+  width:100%;
+  height:10vh;
+  border-bottom: none;
+  border-left: none;
+  border-right:none;
+  border-top: 1px solid #5FFFF4;
+  background-color: black;
+  color:#5FFFF4;
+  text-align: left;
+}
+
+#collapsible_1{
+margin-top:10%;
+}
+
+#collapsible_6{
+  border-bottom: 1px solid #5FFFF4;
+}
+
+#nft_section{
+  position:relative;
+  z-index:-1;
+}
+
+.group{
   display:flex;
   flex-direction:row;
-  justify-content: space-evenly;
+  margin: 5% 0% 0% 29%;
+}
+
+#group1{
+margin-top:6%;
 }
 
 .nft{
-  margin-top: 5%;
-  height: 25vh;
-  width:10%;
-  background-color: rgb(175, 175, 175);
+  margin: 0% 0% 0% 3%;
+  height: 27vh;
+  width:16%;
 }
 
-@keyframes line{
+
+
+
+
+
+@keyframes rainbowBackground {
   0% {
     background-color: #be004f;
-    color:#be004f;
+    color: blue;
   }
 
   25%{
     background-color: purple;
-    color:purple;
+    color: red;
   }
 
   50%{
     background-color: blue;
-    color:blue;
+    color: red;
   }
   
   100%{
     background-color: #be004f;
+    color:blue;
+  }
+}
+
+@keyframes rainbowColor {
+  0% {
     color:#be004f;
+  }
+
+  25%{
+    color:purple;
+  }
+
+  50%{
+    color:blue;
+  }
+  
+  100%{
+    color:#be004f;
+  }
+}
+
+
+@media screen and (min-width:300px) and (max-width:500px){
+
+  #line1{
+    transform: rotate(45deg);
+    transform-origin: -10%;
+    width:200%;
+  }
+  
+  #line2{
+    margin-top: 5%;
+    transform: rotate(-45deg);
+    transform-origin: 50%;
+    width: 300%;
+    margin-left:-50%;
+  }
+  
+  #connect_metamask{
+    margin: 0% 0% 0% 70%; 
+    padding: 1%;
+  }
+  
+  #network{
+    position: absolute;
+    margin: 0.5% 0% 0% 58%; 
+    width: 10%;
+    height: 2vh;
+  }
+
+  h1{
+    margin: 50% 0% 0% 60%;
+    font-family: arial;
+    font-size: 35px;
+  }
+
+  #nft_placeholder{
+    margin: 35% 0% 0% 15%;
+    height: 25vh;
+    width:35%;
+  }
+ 
+  #launch_app{
+    margin:95% 0% 0% 15%;
+    width:25%;
+    font-size: 16px;
+    padding: 2%;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  #p_div{
+    position: absolute;
+    margin: 110% 0% 0% 10%;
+    width: 85%;
+  }
+
+  #line3{
+    display: none;
+  }
+
+  #group1{
+  margin-top:10%;
+  }
+
+  .nft{
+    margin-top: 5%;
+    height: 7vh;
+    width:11%;
   }
 }
