@@ -156,7 +156,6 @@ position:relative;
 display:flex;
 flex-direction: column;
 font-family: arial;
-height: 200vh;
 width:28%;
 margin: 0% 0% 0% 0%;
 background-color: black;
@@ -165,6 +164,12 @@ background-color: black;
 h3{
   font-size: 30px;
   text-align: center;
+  color:#5FFFF4;
+}
+
+#arrows-rotate{
+  position: absolute;
+  margin: 12% 0% 0% 90%;
   color:#5FFFF4;
 }
 
@@ -197,13 +202,19 @@ margin-top:10%;
 
 #nft_section{
   position:relative;
-  z-index:-1;
+  z-index:-1; 
+  width:65%;
+  margin:8% auto;
+  margin-left:33%;
 }
 
 .group{
   display:flex;
   flex-direction:row;
-  margin: 5% 0% 0% 29%;
+  width:100%;
+  margin:auto;
+  margin-top: 5%;
+ 
 }
 
 #group1{
@@ -211,28 +222,13 @@ margin-top:6%;
 }
 
 .nft{
-  margin: 0% 0% 0% 3%;
-  height: 27vh;
-  width:16%;
+  margin: auto;
+  height: 30vh;
+  width:20%;
 }
 
 
 
-
-@keyframes collapsible{
-  0% {
-    height:12.5vh;
-  }
-  25%{
-    height: 25vh;
-  }
-  50%{
-    height:37.5vh;
-  }
-  100%{
-    height: 50vh;
-  }
-}
 
 @keyframes rainbowBackground {
   0% {
@@ -298,7 +294,13 @@ margin-top:6%;
 
 
 @media screen and (min-width:300px) and (max-width:500px){
-
+  body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background-color: black;
+    }
+    
   #line1{
     transform: rotate(45deg);
     transform-origin: -10%;
@@ -398,11 +400,11 @@ margin-top:6%;
 
 
   #nft_navbar{
-    height:7vh;
+    height:20vh;
   }
   
   #connect_metamask_{
-    height:2vh;
+    height:2.5vh;
     width:23%;
     font-size: 10px;
     margin: 5% 0% 0% 73%; 
@@ -411,13 +413,13 @@ margin-top:6%;
   #network_{
     margin: 5.5% 0% 0% 63%; 
     width: 8%;
-    height: 1.5vh;
+    height: 2vh;
   }
   
   #social{
   width: 40%;
   margin-left:5%;
-  margin-top:1%;
+  margin-top:5%;
   }
   
   #twitter,#github,#discord,#document{
@@ -428,10 +430,17 @@ margin-top:6%;
     margin-left:3%; 
   }
   
+  #arrows-rotate{
+    position: absolute;
+    margin: 20% 0% 0% 20%;
+    color:#5FFFF4;
+  }
+  
+
  #filter{
   height: 50vh;
   width:40%;
-  margin: 5% 0% 0% 0%;
+  margin: -5% 0% 0% 0%;
   }
   
   h3{
@@ -442,22 +451,30 @@ margin-top:6%;
   #nft_section{
     position:relative;
     z-index:-1;
+    margin:auto; 
+    width:100%;
+    
   }
   
   .group{
     display:flex;
-    flex-direction:row;
-    margin: 5% 0% 0% 29%;
+    flex-direction:row;  
+    flex-wrap:wrap; 
+    width:100%;
+    margin:10% auto;
   }
   
   #group1{
-  margin-top:6%;
+  margin-top:45%;
   }
   
   .nft{
-    margin: 0% 0% 0% 3%;
-    height: 27vh;
-    width:50%;
+    height: 25vh;
+    width:43%;
+    margin: auto;
   }
 
+  .wrap-space{
+    margin-top:10%;
+  }
 }
