@@ -3,7 +3,8 @@
 ## Overview
 
 0xChemistClub is an NFT platform with future prospects to help support 0xAcid’s mission to stimulate the growth and expansion of Ethereum. 
-**LIVE LINK:**  *https:/0xchemist.club/*
+
+**LIVE LINK:**  *https://0xchemist.club/*
 **LIVE LINK:**  *https://docs.0xacid.com/*
 
 
