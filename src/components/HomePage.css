@@ -1,0 +1,94 @@
+.line{
+  height:0.5vh;
+  width:120%;
+  animation: rainbowBackground 10s ease-in-out infinite;
+  box-shadow: 0 0 100px 15px;
+  }
+
+#line1{
+  transform: rotate(24deg);
+  transform-origin: -5%;
+}
+
+#line2{
+  margin-top: 40%;
+  transform: rotate(-27deg);
+  transform-origin: 0%;
+}
+
+#main_img{
+  position: absolute;
+  margin: -34% 0% 0% 15%;
+  height: 70vh;
+  width:30%;
+}
+
+#social_{
+  position:absolute;
+  width:15%;
+  margin-left:25%;
+  margin-top:5%;
+}
+
+#twitter_,#github_,#discord_{
+  margin-right: 5%;
+  color:#5FFFF4
+}
+
+h1{
+  position: absolute;
+  margin: -25% 0% 0% 60%;
+  color:#5FFFF4;
+  font-family: arial;
+  font-size: 50px;
+}
+
+#p_div{
+  position: absolute;
+  margin: -20% 0% 0% 60%;
+  width: 35%;
+}
+
+p{
+  color:#5FFFF4;
+  font-family: arial;
+  font-size: 18px;
+  line-height:1.4;
+}
+
+#launch_app{
+  position: absolute;
+  margin:-5% 0% 0% 60%;
+  border: none;
+  border-radius: 10px;
+  background-color:#5FFFF4;
+  width:15%;
+  font-size: 18px;
+  padding: 1%;
+}
+
+@keyframes rainbowBackground {
+  0% {
+    background-color: #be004f;
+    color: blue;
+    border-color:#be004f;
+  }
+
+  25%{
+    background-color: purple;
+    color: red;
+    border-color:purple;
+  }
+
+  50%{
+    background-color: blue;
+    color: red;
+    border-color:blue;
+  }
+  
+  100%{
+    background-color: #be004f;
+    color:blue;
+    border-color:#be004f;
+  }
+}

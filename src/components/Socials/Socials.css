@@ -1,0 +1,25 @@
+.social_app{
+  width: 30%;
+  margin-left:5%;
+  margin-top:2%;
+  color:#5FFFF4;
+  }
+
+  .social_home{
+    width: 30%;
+    margin-left:5%;
+    margin-top:2%;
+    color:#5FFFF4;
+    }
+
+.icon{
+  margin-left:8%;
+  color:#5FFFF4;
+}
+
+#book{
+  position:absolute;
+  margin-top:-1%;
+  margin-left:5%;
+}
+  

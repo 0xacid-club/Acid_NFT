@@ -1,0 +1,49 @@
+#filter{
+  position:fixed;
+  top:15vh;
+  display:flex;
+  z-index:-1; 
+  flex-direction: column;
+  font-family: arial;
+  width:28%;
+  background-color: black;
+  }
+  
+  h3{
+    font-size: 30px;
+    text-align: center;
+    color:#5FFFF4;
+  }
+  
+  #arrows-rotate{
+    position: absolute;
+    margin: 12% 0% 0% 90%;
+    color:#5FFFF4;
+  }
+  
+  .collapsible{
+    width:100%;
+    height:10vh;
+    border-bottom: none;
+    border-left: none;
+    border-right:none;
+    border-top: 1px solid #5FFFF4;
+    background-color: black;
+    color:#5FFFF4;
+    text-align: left;
+  }
+  
+  #collapsible_1{
+  margin-top:10%;
+  }
+  
+  #collapsible_6{
+    border-bottom: 1px solid #5FFFF4;
+  }
+  
+  .characteristic{
+    width: 100%;
+    height: 0vh;
+    background-color: black;
+    transition: height 0.2s ease-out;
+  }

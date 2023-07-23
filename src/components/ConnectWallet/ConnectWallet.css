@@ -1,0 +1,75 @@
+#wallet_position{
+ margin-top:-2%;
+}
+
+#connect_wallet{
+  position: absolute;
+  margin: 0% 0% 0% 85%;  
+  width: 9%;
+  border: none;
+  border-radius: 20px;
+  animation: rainbowBackground 10s ease-in-out infinite;
+  padding: 0.8%;
+}
+
+#network{
+  position: absolute;
+  margin: 0.5% 0% 0% 79%;  
+  border: 1px solid;
+  border-radius: 20px;
+  width: 5%;
+  height: 3.5vh;
+  text-align: center;
+  animation: rainbowBorder 10s ease-in-out infinite;
+  font-family: Arial;
+}
+
+
+
+@keyframes rainbowBackground {
+  0% {
+    background-color: #be004f;
+    color: blue;
+    border-color:#be004f;
+  }
+
+  25%{
+    background-color: purple;
+    color: red;
+    border-color:purple;
+  }
+
+  50%{
+    background-color: blue;
+    color: red;
+    border-color:blue;
+  }
+  
+  100%{
+    background-color: #be004f;
+    color:blue;
+    border-color:#be004f;
+  }
+}
+
+@keyframes rainbowBorder {
+  0% {
+    border-color:#be004f;
+    color: blue;
+  }
+
+  25%{
+    border-color:purple;
+    color: red;
+  }
+
+  50%{
+    border-color:blue;
+    color: red;
+  }
+  
+  100%{
+    border-color:#be004f;
+    color:blue;
+  }
+}
