@@ -12,7 +12,7 @@
 ## Features
 
 - Allows wallet connection to purchase NFTs.
-- Platform operates in Ethereum and Arbitrum networks.
+- Platform operates on Ethereum and Arbitrum networks.
 - Contains social links and documentation.
 
 
